@@ -77,6 +77,11 @@ enum {
     ACONFIGURATION_SCREENLONG_NO = 0x1,
     ACONFIGURATION_SCREENLONG_YES = 0x2,
 
+    ACONFIGURATION_UI_PAC_ANY = 0x0000,
+    ACONFIGURATION_UI_PAC_NORMAL = 0x0001,
+    ACONFIGURATION_UI_PAC_YES = 0x0002,
+    ACONFIGURATION_UI_PAC_NO = 0x0003,
+
     ACONFIGURATION_UI_THEME_MODE_ANY = 0x0000,
     ACONFIGURATION_UI_THEME_MODE_NORMAL = 0x0001,
     ACONFIGURATION_UI_THEME_MODE_HOLO_DARK = 0x0002,
@@ -114,6 +119,7 @@ enum {
     ACONFIGURATION_DENSITY = 0x0100,
     ACONFIGURATION_SCREEN_SIZE = 0x0200,
     ACONFIGURATION_VERSION = 0x0400,
+    ACONFIGURATION_UI_PAC = 0x0700,
     ACONFIGURATION_SCREEN_LAYOUT = 0x0800,
     ACONFIGURATION_UI_THEME_MODE = 0x0900,
     ACONFIGURATION_UI_MODE = 0x1000,
@@ -290,6 +296,16 @@ int32_t AConfiguration_getScreenLong(AConfiguration* config);
  * Set the current screen long in the configuration.
  */
 void AConfiguration_setScreenLong(AConfiguration* config, int32_t screenLong);
+
+/**
+ * Return the current ACONFIGURATION_UI_PAC_* set in the configuration.
+ */
+int32_t AConfiguration_getUiPac(AConfiguration* config);
+
+/**
+ * Set the current PAC UI in the configuration.
+ */
+void AConfiguration_setUiPac(AConfiguration* config, int32_t uiPac);
 
 /**
  * Return the current ACONFIGURATION_UI_THEME_MODE_* set in the configuration.
