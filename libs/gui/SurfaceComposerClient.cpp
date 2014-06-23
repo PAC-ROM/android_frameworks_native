@@ -816,7 +816,7 @@ PixelFormat ScreenshotClient::getFormat() const {
 }
 
 uint32_t ScreenshotClient::getStride() const {
-    return mBuffer.stride;
+    return mBuffer.width;
 }
 
 size_t ScreenshotClient::getSize() const {
