@@ -84,11 +84,11 @@
 #include "RenderEngine/RenderEngine.h"
 #include <cutils/compiler.h>
 #ifdef QCOM_BSP
-#include <gralloc_priv.h>
+#include <../../../../hardware/qcom/display-caf/libgralloc/gralloc_priv.h>
 #endif
 
 #ifdef QCOM_BSP
-#include <display_config.h>
+#include <../../../../hardware/qcom/display-caf/libqdutils/display_config.h>
 #endif
 
 #define DISPLAY_COUNT       1

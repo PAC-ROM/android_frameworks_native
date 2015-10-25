@@ -48,7 +48,7 @@
 
 #include "RenderEngine/RenderEngine.h"
 #ifdef QCOM_BSP
-#include <gralloc_priv.h>
+#include <../../../../hardware/qcom/display-caf/libgralloc/gralloc_priv.h>
 #endif
 
 #define DEBUG_RESIZE    0
